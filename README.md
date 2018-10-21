@@ -10,11 +10,13 @@ This is a simple WordPress installation to run Wordpress and MySQL with just one
 
 ## Running
 
-Configure your Twitter credentials in application.properties
+1 - Execute the command on terminal: docker-compose up -d
+2 - Open the url: http://localhost:8000/
 
-security.oauth2.client.clientId
+To stop and remove just execute:
 
-security.oauth2.client.clientSecret
+docker kill $(docker ps -q)
+docker rm $(docker ps -a -q)
 
 ## Contributing
 
